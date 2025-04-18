@@ -45,12 +45,23 @@ function Adult(hasID, isAbove18){
 }
 Adult(true, true)
 
-for(i=0; i>0; i++){
-    const studentScore =[28, 30, 90, 80, 65, 120, 111]
+
+const studentGrade =[28, 30, 90, 80, 47, 102, 111, 15, 38]
+studentGrade.forEach(function (mark){
+    if (mark>=50){
+       console.log("Pass")
+    }else {console.log("Fail")}
+    
+}
+)
+//console.log(mark)
+
+/*for(i=0; i>0; i++){
+    
     if (studentScore<=50){
         console.log("Pass")
     }else {console.log("Fail")}
-}
+}*/
 
 
  let result =(math=50, English=50) => {
@@ -88,8 +99,10 @@ function labour(hoursWorked){
 labour(20);
 
 let number =(firstNumber, secondNumber) => {
-    if(firstNumber){console.log("Yes")
+    if(firstNumber>secondNumber){console.log(firstNumber)
  
-    }else {console.log("No")} 
+    }else if(secondNumber>firstNumber){console.log(secondNumber)
+
+    } else{console.log("numbers are equal")}
  }
- result(20, 50);
+ number(70, 50);
